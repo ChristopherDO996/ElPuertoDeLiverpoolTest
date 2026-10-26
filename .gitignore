@@ -1,0 +1,12 @@
+**/node_modules/
+**/target/
+**/build/
+**/dist/
+.idea/
+.vscode/
+*.swp
+*.sublime-project
+.env
+*.log
+.DS_Store
+mongo_data/

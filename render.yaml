@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: back-app
+    env: docker
+    dockerContext: ./back
+    dockerfilePath: ./back/Dockerfile
+    plan: free
+    envVars:
+      - key: SPRING_DATA_MONGODB_URI
+        value: mongodb+srv://christopherdo996_db_user:Aj55rgAHE8JRUX6K@cluster0.u3q5yuh.mongodb.net/
+
+  - type: web
+    name: front-app
+    env: docker
+    dockerContext: ./front
+    dockerfilePath: ./front/Dockerfile
+    plan: free

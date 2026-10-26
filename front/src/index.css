@@ -1,0 +1,56 @@
+:root {
+  --liverpool-primary: #7B1B61;
+  --liverpool-primary-hover: #63154E;
+  --liverpool-light: #F8F1F6;
+  --bg-dashboard: #F4F6F9;
+}
+
+body {
+  background-color: var(--bg-dashboard);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.btn-liverpool {
+  background-color: var(--liverpool-primary);
+  color: #ffffff;
+  border: none;
+}
+
+.btn-liverpool:hover {
+  background-color: var(--liverpool-primary-hover);
+  color: #ffffff;
+}
+
+.bg-liverpool {
+  background-color: var(--liverpool-primary) !important;
+}
+
+.text-liverpool {
+  color: var(--liverpool-primary) !important;
+}
+
+.border-liverpool {
+  border-color: var(--liverpool-primary) !important;
+}
+
+.metric-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.metric-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
